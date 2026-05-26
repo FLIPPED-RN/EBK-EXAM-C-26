@@ -1,6 +1,6 @@
 ﻿namespace EBK_EXAM_C_26
 {
-    partial class Form1
+    partial class Логин
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            button1 = new Button();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            label1 = new Label();
+            SuspendLayout();
+            // 
+            // button1
+            // 
+            button1.Location = new Point(85, 203);
+            button1.Name = "button1";
+            button1.Size = new Size(187, 34);
+            button1.TabIndex = 0;
+            button1.Text = "Войти";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(43, 104);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(269, 23);
+            textBox1.TabIndex = 1;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(43, 157);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(269, 23);
+            textBox2.TabIndex = 2;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 20F);
+            label1.Location = new Point(132, 44);
+            label1.Name = "label1";
+            label1.Size = new Size(93, 37);
+            label1.TabIndex = 3;
+            label1.Text = "Логин";
+            // 
+            // Логин
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(358, 315);
+            Controls.Add(label1);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(button1);
+            Name = "Логин";
             Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button button1;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private Label label1;
     }
 }
