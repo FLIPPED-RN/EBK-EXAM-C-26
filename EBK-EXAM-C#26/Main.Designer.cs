@@ -28,12 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Main";
+            panel1 = new Panel();
+            button1 = new Button();
+            labelUser = new Label();
+            SuspendLayout();
+            // 
+            // panel1
+            // 
+            panel1.Location = new Point(12, 40);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(776, 360);
+            panel1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(603, 406);
+            button1.Name = "button1";
+            button1.Size = new Size(185, 32);
+            button1.TabIndex = 1;
+            button1.Text = "Добавить";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // labelUser
+            // 
+            labelUser.AutoSize = true;
+            labelUser.Location = new Point(12, 22);
+            labelUser.Name = "labelUser";
+            labelUser.Size = new Size(38, 15);
+            labelUser.TabIndex = 2;
+            labelUser.Text = "label1";
+            // 
+            // Main
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(labelUser);
+            Controls.Add(button1);
+            Controls.Add(panel1);
+            Name = "Main";
+            Text = "Main";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Panel panel1;
+        private Button button1;
+        private Label labelUser;
     }
 }
