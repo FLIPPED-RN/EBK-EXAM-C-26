@@ -9,7 +9,7 @@ namespace EBK_EXAM_C_26
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            //lol
         }
     }
 }
